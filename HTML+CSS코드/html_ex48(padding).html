@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제41</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            width:100px;
+            height:100px;
+        }
+        #my-div1{
+            background-color: red;
+            padding-top:50px;
+            box-sizing: border-box;
+            /*박스 크기를 계산할때 패딩이나, 경계선을 박스 내부 크기에 포함*/
+            /*결과적으로는 패딩때문에 늘어나는것 방지*/
+            /*뱃살을 옷안에 쑤셔넣었다.*/
+        }
+    </style>
+</head>
+<body>
+   <div id="my-div1">
+        박스1
+   </div>
+</body>
+</html>
