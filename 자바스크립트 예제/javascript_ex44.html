@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제42</title>
+    <script>
+        var num1 = prompt('값1 입력')
+        var num2 = prompt('값2 입력')
+        var result = num1+num2
+        //num1을 10이랑 num2을 20이랑 하면 값이 1020이 나온다.
+        //왜 30이 아닐까? string 문자열이라서
+        //"10" + "20" -> "1020"
+        //"hello:" +3 -> "hello:3"
+        //이건 자동형변환 발생
+        //숫자 3이 문자열로 변환
+        //prompt에 숫자 10을 실제론 문자열 취급
+        //prompt(프롬프트)로 받은게 문자열이 되네? 그럼 변환어떻게????
+        document.write(result,"<br>")
+    </script>
+</head>
+<body>
+</body>
+</html>

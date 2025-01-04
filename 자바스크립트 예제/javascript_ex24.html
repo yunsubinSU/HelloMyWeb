@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제12</title>
+    <script>
+       var num1=9;
+       var num2='9';
+       var result = (num1==num2);
+       //같은가? 다른거 같은데... 값은 true가 나온다.
+       //리액트에서도 ===권장 된다
+       //num1과 num2가 같은가?
+       //근데 보니깐.. 하나는 number 즉 숫자 타입 9이고
+       //다른 하나는 string 문자열 타입인 9이다.
+       //그래서 둘이가 다른게 맞고 이걸 다르게 보면 안되는 거다.
+       //예를 들어서 숫자 9에 +2를 하면 값은 11 이고
+       //문자열 9에다가 +2를 하면 '9'+ 2가 '9'+'2'에서 '92'가 된다.
+       //9랑 '9'를 같다고 보면 분명히 문제가 생긴다.
+       //이러한 이유를 봤을 때 결과는 false가 맞는데 근데 결과를 보면 true가 나온다.
+       document.write(result, "<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>

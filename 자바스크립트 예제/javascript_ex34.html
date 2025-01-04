@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제30</title>
+    <script>
+       // 비트 연산자 = 같은 비트 자리 끼리 연산하는 연산자
+       //비트 - 2진수 1자리 
+       //비트 - 바이트 - 메가바이트 - 기가바이트 - 테라바이트
+       //1바이트 = 8비트
+       //메가 = 백만
+
+       //비트 연산자 종류
+       //& - 비트AND
+       //| - 비트 OR
+       //~ - 비트 반전
+       //^ - 비트 XOR
+       //<< - 비트 왼쪽 이동
+       //>> - 비트 오른쪽 이동
+
+       var num1=5;
+       var num2=3;
+       var result = num1&num2;
+       // 00000000 00000000 00000000 00000101 -5
+       // 00000000 00000000 00000000 00000011 -3 &
+       // 00000000 00000000 00000000 00000001 -1
+       document.write(result, "<br>"); //1
+
+       result = num1|num2;
+       // 00000000 00000000 00000000 00000101 -5
+       // 00000000 00000000 00000000 00000011 -3 |
+       // 00000000 00000000 00000000 00000111 -7
+       document.write(result, "<br>"); //7
+       </script>
+</head>
+<body>
+</body>
+</html>

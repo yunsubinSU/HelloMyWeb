@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제30</title>
+    <script>
+       var num1=9;
+       var num2=5;
+
+       var result =(num1>=num2)&&(num1==num2);
+       //풀어서 해석해보면 요렇다.
+       //var result = (num1>=num2) && (num1==num2);
+       //var result = true && (num1==num2);
+       //var result = true && false;
+       //var result = false;
+
+       //관계연산자랑 논리연산자 응용문제
+       //대입연산자 (=) 나오면 오른쪽부터 본다.
+       //오른쪽 가니까 논리 AND가 있고 
+       //논리 AND의 왼쪽항부터 읽는다.
+       //num1이 num2 이상인가? 참 - true
+       //그 다음 논리 AND의 오른쪽항 읽기
+       //num1이 num2와 같은가? 거짓 - false
+       //같은가 거짓 false
+       document.write(result,"<br>"); //false
+    </script>
+</head>
+<body>
+</body>
+</html>
