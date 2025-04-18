@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>단계별 폼</title>
+  <link rel="stylesheet" href="../../static/css/project/project.css">
+    <script src="../../static/js/project/project.js" defar></script>
+</head>
+<body>
+
+<!-- STEP 1: 기본정보 -->
+<div class="section active" id="step1">
+  <div class="step-title">1단계: 기본정보 입력</div>
+  <label for="name">이름</label>
+  <input type="text" id="name">
+
+  <label for="email">이메일</label>
+  <input type="email" id="email">
+
+  <button onclick="goToStep(2)">다음</button>
+</div>
+
+<!-- STEP 2: 서비스 설명 -->
+<div class="section" id="step2">
+  <div class="step-title">2단계: 서비스 설명</div>
+  <p>당신이 입력한 정보에 따라 적절한 서비스를 소개합니다.</p>
+  <p>맞춤 서비스: 📚 개인 도서 추천, ✍️ 작가 인터뷰 등</p>
+
+  <button onclick="goToStep(3)">다음</button>
+</div>
+
+<!-- STEP 3: 최종 제출 -->
+<div class="section" id="step3">
+  <div class="step-title">3단계: 제출하기</div>
+  <p>모든 정보를 확인하고 제출하세요.</p>
+  <button onclick="submitForm()">제출</button>
+</div>
+
+</body>
+</html>
